@@ -2,11 +2,25 @@ import React, {useEffect, useState} from "react";
 import database from "../database.js";
 import Row from "./Row.jsx";
 import Featured from "./Featured.jsx";
+import Header from "./Header.jsx";
 
 const Home = () => {
 
     const [homeList, setHomeList] = useState([]);
     const [featured, setFeatured] = useState(null);
+    const [headerIsBlack, setHeader] = useState(false);
+
+    useEffect(() => {
+        const scrollListener = () => {
+            if(window.scrollY > 100) setHeader(true);
+            else setHeader(false);
+        }
+
+        window.addEventListener("scroll", scrollListener);
+
+        return () => window.removeEventListener("scroll", scrollListener);
+
+    }, [])
 
     useEffect(() => {
         const loadHome = async () => {
@@ -23,6 +37,7 @@ const Home = () => {
 
     return(
         <div className="home">
+            <Header isBlack={headerIsBlack}/>
             {featured && <Featured anime={featured}/>}
             <div className="home-list">
                 {homeList.map((item, key) => {

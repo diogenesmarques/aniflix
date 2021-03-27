@@ -69,25 +69,27 @@
     outline:none;
     border-radius: 5%;
 }
-
 .play-button{
     transition: all ease 200ms;
     background-color:white;
     color:black;
 }
-
 .list-button{
     transition: all ease 200ms;
     background-color:rgb(56, 56, 56);
     color:white;
 }
-
 .play-button:hover{
     transition: all ease 200ms;
     background-color:rgb(209, 209, 209);
 }
-
 .list-button:hover{
     transition: all ease 200ms;
     background-color:rgb(29, 29, 29);
+}
+.anime-genres{
+    width:45%;
+    font-size:1.3rem;
+    color:rgb(170, 170, 170);
+    padding-left:20px;
 }

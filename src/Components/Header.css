@@ -1,0 +1,85 @@
+.header{
+    transition: all ease 200ms;
+    position:fixed;
+    z-index: 999;
+    top:0;
+    left:0;
+    right:0;
+    height: 70px;
+    display:flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    align-items: center;
+    background: linear-gradient(to bottom, #111 10%, transparent 90%)
+}
+.black-header{
+    transition: all ease 200ms;
+    position:fixed;
+    z-index: 999;
+    top:0;
+    left:0;
+    right:0;
+    height: 70px;
+    display:flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    align-items: center;
+    background-color: #111;
+}
+.logo-nav{
+    right:0;
+    width:500px;
+    display:flex;
+    justify-content: space-evenly;
+    font-size: 2.1rem;
+}
+.logo{
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+}
+.ani{
+    color:rgb(68, 250, 68);
+}
+.user button{
+    height:120%;
+    width:110%;
+    font-size: 2rem;
+    color:white;
+    background-color:transparent;
+    outline:none;
+    border:solid white 2px;
+    cursor:pointer;
+    border-radius:100%;
+    transition: all ease 200ms;
+}
+.user button:hover{
+    border:solid rgb(68, 250, 68) 2px;
+    transition: all ease 200ms;
+}
+.nav{
+    display:flex;
+    align-items: center;
+}
+.selected{
+    color:#fff;
+    cursor: default !important;
+    font-weight: bold;
+}
+.nav p{
+    transition: all ease 200ms;
+    margin-right:10px;
+    font-size:.9rem;
+    cursor:pointer;
+    font-weight: thin;
+}
+p .nav-home{
+    margin-left:50px;
+}
+.nav p:hover{
+    transition: all ease 200ms;
+    color:rgb(165, 165, 165);
+}
+.selected:hover{
+    color:#fff !important;
+}

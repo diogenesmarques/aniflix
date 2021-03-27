@@ -56,8 +56,13 @@ const Featured = ({anime}) => {
                         <p className="anime-synopsis noselect">{animeInfo && animeInfo.synopsis}</p>
                     </div>
                     <div className="buttons">
-                        <button className="play-button">Watch</button>
+                        <button className="play-button"><i className="fas fa-play"></i>   Watch</button>
                         <button className="list-button">+ Add to List</button>
+                    </div>
+                    <div className="anime-genres noselect">
+                        {animeInfo && `Genres: ` + animeInfo.genres.map((genre) =>{
+                        return ` ${genre.name}`
+                    })+`.`}
                     </div>
                 </div>
             </div>
