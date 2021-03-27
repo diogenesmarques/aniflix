@@ -1,0 +1,93 @@
+
+.noselect{
+    -webkit-user-select: none;        
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+.featured{
+    margin: 0px;
+    height: 100vh;
+    width:100vw;
+}
+.horizontal-gradient{
+    margin: 0px;
+    width:inherit;
+    height: inherit;
+    background: linear-gradient(to right, #111 30%, transparent);
+}
+.vertical-gradient{
+    height: inherit;
+    width:inherit;
+    margin: 0px;
+    height:inherit;
+    background: linear-gradient(to top, #111, transparent);
+}
+.info{
+    padding-left:20px;
+    padding-top:8%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.anime-details{
+    display:flex;  
+    margin:0px;
+    font-size:1.5rem;
+    width:40%;
+    font-weight: bold;
+}
+.anime-title{
+    font-size:8rem;
+    margin:0px;
+}
+.anime-score{
+    margin:0px 10px 0px 0px;
+    color:rgb(115, 197, 115);
+}
+.anime-season{
+    margin:0px 10px 0px 0px;
+}
+.anime-episodes{
+    margin:0px 10px 0px 0px;
+}
+.anime-synopsis{
+    width:45%;
+    font-size:1.3rem;
+    color:rgb(170, 170, 170);
+}
+.buttons button{
+    width:150px;
+    height:50px;
+    padding:10px;
+    margin:5px 0px 20px 20px; 
+    font-size:20px;
+    font-weight: bold;
+    cursor:pointer;
+    border:none;
+    outline:none;
+    border-radius: 5%;
+}
+
+.play-button{
+    transition: all ease 200ms;
+    background-color:white;
+    color:black;
+}
+
+.list-button{
+    transition: all ease 200ms;
+    background-color:rgb(56, 56, 56);
+    color:white;
+}
+
+.play-button:hover{
+    transition: all ease 200ms;
+    background-color:rgb(209, 209, 209);
+}
+
+.list-button:hover{
+    transition: all ease 200ms;
+    background-color:rgb(29, 29, 29);
+}

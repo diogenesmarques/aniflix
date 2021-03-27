@@ -1,0 +1,31 @@
+.row{
+    padding-left:30px;
+    margin-bottom:30px;
+    font-size:24px;
+    font-weight: bold;
+    overflow-x: visible;
+}
+.row-items{
+    display:flex;
+    overflow: hidden;
+    ;
+}
+.row-title{
+    padding-bottom:10px;
+    transition: all ease 200ms;
+}
+.row-title:hover{
+    color:white;
+    transition: all ease 200ms;
+}
+img{
+    height: 300px;
+    width:200px;
+    transform: scale(0.9);
+    transition: all ease 200ms;
+}
+img:hover{
+    cursor:pointer;
+    transform: scale(1);
+    transition: all ease 200ms;
+}
